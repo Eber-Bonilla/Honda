@@ -1,0 +1,144 @@
+@keyframes fade-away {
+	to { 
+    opacity: 0;
+  }
+}
+
+section {
+	view-timeline: --scroll;
+
+}
+
+h1 span:last-child {
+	animation:
+		scale-up both ease-in-out,
+		fade-away both linear;
+	animation-timeline: --scroll;
+	animation-range:
+		exit 0% exit 100%,
+		exit 20% exit 45%;	
+}
+
+/* basic */
+section {
+	position: relative;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+.xd {
+	position: relative;
+	min-height: 100vh;
+	display: inline;
+	place-items: center;
+  text-align: center;
+}
+
+h1 span:first-of-type {
+	color: red;
+	font-size: 0.35em;
+  font-family: ff;
+}
+
+section:nth-of-type(1) {
+	height: 100vh;
+}
+
+section:nth-of-type(2) {
+	height: 40vh;
+}
+
+h1 {
+	display: grid;
+}
+
+h2 {
+	font-size: clamp(2rem, 5vw + 1rem, 6rem);
+	text-align: center;
+}
+
+section div {
+	width: 800px;
+	max-width: 100vh;
+	padding: 0 1rem;
+}
+
+:is(h1, h2) {
+	font-size: clamp(2.5rem, 7vw + 1rem, 10rem);
+	text-align: center;
+	line-height: 1;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	translate: -50% -50%;
+	width: 100%;
+}
+
+/* reset */
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+  display: grid;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  place-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    display: block;
+    margin: 5vh auto;
+    margin-bottom: 30vh;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  #btn:hover,
+  :focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+      0 0 100px #008cff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff80;
+}
+
+video{
+  width: 80%;
+  border-radius: 2%;
+}
+
+img{
+  width: 63%;
+  height: 50px;
+  margin: 0%;
+  position: absolute;
+  top: -99%;
+  left: 20%;
+}

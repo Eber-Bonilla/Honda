@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background: #242323;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.headerx {
+    background: #242323;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+.header a {
+    color: white;
+}
+.headerx a {
+    color: white;
+}
+.headerx a:hover{
+    color: blue;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+.cx{
+    top: -200px;
+}
+li:hover{
+    scale: 1.2;
+}
+a:hover{
+    color: red;
+}
+img:hover{
+    color: none;
+}
+img{
+    width: 160px;
+}
+.xd1{
+    scale: none !important;
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+}
+
+nav {
+    float: right;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #e60012;
+    color: #fff;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    margin: 10px;
+    padding: 30px;
+    max-width: 45%;
+    text-align: center;
+    height: 160px;
+}
+.hero h1{
+    font-size: 50px;
+}
+.hero p{
+    font-size: 23px;
+}
+
+
+footer p {
+    margin: 0;
+}
