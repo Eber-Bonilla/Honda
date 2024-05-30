@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
 </head>
 <body>
+    <audio id="miVideo" autoplay loop>
+        <source src="img/audio.mp3">
+        Tu navegador no soporta el elemento de video.
+    </audio>
     <header class="header">
         <nav class="menu">
           <ul>
@@ -67,5 +71,22 @@
 
 </div>
 <script src="vanilla-tilt.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var video = document.getElementById("miVideo");
+
+        // Restaurar el estado del video
+        var savedTime = localStorage.getItem("videoTime");
+        var savedVolume = localStorage.getItem("videoVolume");
+
+        if (savedTime !== null) {
+            video.currentTime = parseFloat(savedTime);
+        }
+
+        if (savedVolume !== null) {
+            video.volume = parseFloat(savedVolume);
+        }
+    });
+</script>
 </body>
 </html>
