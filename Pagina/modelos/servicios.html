@@ -25,8 +25,8 @@
 
     <main>
         <section class="hero">
-            <h1>Nuestros Servicios</h1>
-            <p>En Honda, ofrecemos una variedad de servicios para mantener tu vehículo en óptimas condiciones.</p>
+            <h1 id="simpleUsage">Nuestros Servicios</h1>
+            <p id="simpleUsagee">En Honda, ofrecemos una variedad de servicios para mantener tu vehículo en óptimas condiciones.</p>
         </section>
 
         <section class="services">
@@ -54,5 +54,17 @@
             <p>&copy; 2024 Honda. Todos los derechos reservados.</p>
         </div>
         <script src="vanilla-tilt.js"></script>
+        <script src="node_modules/typeit/dist/index.umd.js"></script>
+        <script>new TypeIt("#simpleUsage", {
+            strings: "",
+            speed: 50,
+            waitUntilVisible: true,
+        }).go();</script>
+                <script>new TypeIt("#simpleUsagee", {
+                    strings: "",
+                    speed: 50,
+                    waitUntilVisible: true,
+                    startDelay: 1500.
+                }).go();</script>
 </body>
 </html>

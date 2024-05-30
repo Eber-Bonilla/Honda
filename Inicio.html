@@ -11,15 +11,32 @@
     <section>
       <div>
         <h1>
-          <span><h1 class="animate__animated animate__zoomInDown animate__delay-0.1s">Honda</h1></span>
+          <span><h1 id="simpleUsage" class="animate__animated animate__zoomInDown animate__delay-0.1s">Honda</h1></span>
         </h1>
       </div>
     </section>
     <section class="xd">
-      <h4 >(Esta Pagina fue hecha por Eber, Eleana y Kery)</h4>
+      <h4 id="simpleUsagee">(Esta Pagina fue hecha por Eber, Eleana y Kery)</h4>
       <button id="btn" data-tilt data-tilt-scale="1.1"><a href="Pagina/modelos/index.html">Continuar</a></button>
     </section>
   </main>
   <script src="Pagina/modelos/vanilla-tilt.js"></script>
+  <script src="Pagina/modelos/node_modules/typeit/dist/index.umd.js"></script>
+  <script>new TypeIt("#simpleUsage", {
+      strings: "",
+      speed: 200,
+      waitUntilVisible: true,
+      startDelay: 750,
+      breakLines: true,
+      cursor: false,
+      afterComplete: function(instance) {
+        document.querySelector('.typeit-cursor').style.animation = 'none'; // Deja de parpadear el cursor
+      }
+  }).go();</script>
+    <script>new TypeIt("#simpleUsagee", {
+      strings: "",
+      speed: 50,
+      waitUntilVisible: true,
+  }).go();</script>
 </body>
 </html>
