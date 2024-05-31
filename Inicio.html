@@ -11,7 +11,7 @@
     <section>
       <div>
         <h1>
-          <span><h1 id="simpleUsage" class="animate__animated animate__zoomInDown animate__delay-0.1s">Honda</h1></span>
+          <span><h1 class="animate__animated animate__zoomInDown animate__delay-0.1s"  id="simpleUsage">Honda</h1></span>
         </h1>
       </div>
     </section>
@@ -27,11 +27,7 @@
       speed: 200,
       waitUntilVisible: true,
       startDelay: 750,
-      breakLines: true,
       cursor: false,
-      afterComplete: function(instance) {
-        document.querySelector('.typeit-cursor').style.animation = 'none'; // Deja de parpadear el cursor
-      }
   }).go();</script>
     <script>new TypeIt("#simpleUsagee", {
       strings: "",
