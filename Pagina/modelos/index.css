@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url('Coro.png'), auto;
 }
 body{
     background: #000;
@@ -17,9 +18,11 @@ body{
     position: sticky;
     top: 0;
     z-index: 1000;
+    cursor: url('se.png'), auto;
 
 }
 .headerx {
+    cursor: url('se.png'), auto;
     background: #242323;
     width: 100%;
     height: 70px;
@@ -34,9 +37,12 @@ body{
 }
 .header a {
     color: white;
+    cursor: url('se.png'), auto;
+
 }
 .headerx a {
     color: white;
+    cursor: url('se.png'), auto;
 }
 .headerx a:hover{
     color: blue;
@@ -100,8 +106,6 @@ img{
     width: 85%;
     height: 385px;
     background: white;
-    border: solid rgb(155, 20, 20) 3px;
-    box-shadow: -0px -0px 50px red;
 }
 h1, p{
     position: relative;
@@ -110,27 +114,18 @@ h1, p{
     text-align: center;
 }
 .imagen-auto{
-    width: 94%;
-    height: 310px;
-    position: relative;
-    left: 50px;
+    width: 100%;
+    height: 320px;
 }
 .videoo{
     width: 70%;
     position: relative;
     border-radius: 30px;
     right: -15%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     box-shadow: -0px -0px 50px rgb(0, 225, 255);
     border: solid rgb(43, 0, 255) 3px;
 }
-
-
-
-
-
-
-
 button {
     color: #000000;
     padding: 0.7em 1.7em;
@@ -144,6 +139,7 @@ button {
     position: relative;
     top: -370px;
     left: 100px;
+    cursor: url('se.png'), auto;
   }
   
   button:hover {
@@ -152,5 +148,26 @@ button {
   
   button:active {
     box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
-  }
-  
+}
+.servicios1{
+    width: 100%;
+    height: 50px;
+    background: rgb(24, 106, 189);
+    position: relative;
+    top: 40px;
+}
+.Conocenos{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fc0;
+    position: relative;
+    margin: 0 auto;
+    display: flex; 
+}
+.enlace{
+    color: white; 
+    padding: 15px 200px;
+    position: relative; 
+    left: 60px;
+}

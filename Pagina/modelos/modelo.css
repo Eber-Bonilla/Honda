@@ -5,7 +5,7 @@ body{
 background: #0f0c29;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+cursor: url('H.png'), auto;
 }
 .Todo{
     width: 100%;
@@ -62,9 +62,11 @@ h5{
     position: sticky;
     top: 0;
     z-index: 1000;
+    cursor: url('se.png'), auto;
 }
 .header a {
     color: white;
+    cursor: url('se.png'), auto;
 }
 ul {
     display: flex;
@@ -113,6 +115,7 @@ img{
     margin-left: 20px;
     margin-bottom: 20px;
     border: 1.3px solid red;
+    cursor: url('se.png'), auto;
   }
   
   button:hover {
@@ -120,6 +123,7 @@ img{
     background-color: hsl(0, 80%, 48%);
     color: hsl(0, 0%, 100%);
     box-shadow: rgb(206, 35, 23) 0px 7px 29px 0px;
+    cursor: url('se.png'), auto;
   }
 
 .contenedor{
